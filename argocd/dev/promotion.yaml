@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-promotion
+  namespace: argocd
+spec:
+  project: default
+  sources:
+    - repoURL: https://github.com/Phuc-215/yas.git
+      targetRevision: main
+      path: k8s/charts/promotion
+      helm:
+        valueFiles:
+          - $values/overlays/dev/promotion.yaml
+    - repoURL: https://github.com/Phuc-215/yas-deploy.git
+      targetRevision: main
+      ref: values
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
