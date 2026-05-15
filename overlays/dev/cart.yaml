@@ -1,6 +1,6 @@
 backend:
   image:
-    tag: latest
+    tag: 7570f078
   ingress:
     enabled: true
     host: cart.yas.local.com
