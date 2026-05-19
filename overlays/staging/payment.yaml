@@ -2,5 +2,4 @@ backend:
   image:
     tag: v1.0.0
   ingress:
-    enabled: true
-    host: payment.yas.local.com
+    host: api.staging.local.com
