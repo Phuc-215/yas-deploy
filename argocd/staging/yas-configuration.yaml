@@ -1,23 +1,23 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-delivery
+  name: staging-yas-reloader
   namespace: argocd
 spec:
   project: default
   sources:
     - repoURL: https://github.com/Phuc-215/yas.git
       targetRevision: main
-      path: k8s/charts/delivery
+      path: k8s/charts/yas-configuration
       helm:
         valueFiles:
-          - $values/overlays/dev/delivery.yaml
+          - $values/overlays/staging/yas-configuration.yaml
     - repoURL: https://github.com/Phuc-215/yas-deploy.git
       targetRevision: main
       ref: values
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: staging
   syncPolicy:
     automated:
       prune: true
