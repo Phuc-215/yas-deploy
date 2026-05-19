@@ -2,4 +2,4 @@ backend:
   image:
     tag: v1.0.0
   ingress:
-    host: api.staging.local.com
+    host: backoffice.staging.local.com

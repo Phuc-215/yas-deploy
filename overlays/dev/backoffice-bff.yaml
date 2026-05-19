@@ -2,4 +2,4 @@ backend:
   image:
     tag: latest
   ingress:
-    host: api.dev.local.com
+    host: backoffice.dev.local.com
