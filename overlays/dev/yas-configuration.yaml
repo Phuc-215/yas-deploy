@@ -1,40 +1,6 @@
-applicationConfig:
-  spring:
-    security:
-      oauth2:
-        resourceserver:
-          jwt:
-            issuer-uri: http://identity.dev.yas.local.com/realms/Yas
-  springdoc:
-    oauthflow:
-      authorization-url: http://identity.dev.yas.local.com/realms/Yas/protocol/openid-connect/auth
-      token-url: http://identity.dev.yas.local.com/realms/Yas/protocol/openid-connect/token
-
-backofficeBffExtraConfig:
-  spring:
-    security:
-      oauth2:
-        client:
-          provider:
-            keycloak:
-              issuer-uri: http://identity.dev.local.com/realms/Yas
-
-storefrontBffExtraConfig:
-  spring:
-    security:
-      oauth2:
-        client:
-          provider:
-            keycloak:
-              issuer-uri: http://identity.dev.local.com/realms/Yas
-
 mediaApplicationConfig:
   yas:
     publicUrl: http://api.dev.local.com/media
-
-customerApplicationConfig:
-  keycloak:
-    auth-server-url: http://identity.dev.local.com
 
 paymentPaypalApplicationConfig:
   yas:
