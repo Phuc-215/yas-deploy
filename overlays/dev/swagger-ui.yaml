@@ -15,3 +15,6 @@ ingress:
   host: api.dev.local.com
   hosts:
     - host: api.dev.local.com
+      paths:
+        - path: /swagger-ui
+          pathType: ImplementationSpecific
