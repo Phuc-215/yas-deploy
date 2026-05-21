@@ -1,0 +1,17 @@
+urls: "[{ url: 'http://api.dev.local.com/product/v3/api-docs', name: 'Product' },
+      { url: 'http://api.dev.local.com/media/v3/api-docs', name: 'Media' },
+      { url: 'http://api.dev.local.com/customer/v3/api-docs', name: 'Customer' }, 
+      { url: 'http://api.dev.local.com/cart/v3/api-docs', name: 'Cart'},
+      { url: 'http://api.dev.local.com/rating/v3/api-docs', name: 'Rating' }, 
+      { url: 'http://api.dev.local.com/order/v3/api-docs', name: 'Order'},
+      { url: 'http://api.dev.local.com/payment/v3/api-docs', name: 'Payment'},
+      { url: 'http://api.dev.local.com/location/v3/api-docs', name: 'Location'}, 
+      { url: 'http://api.dev.local.com/inventory/v3/api-docs', name: 'Inventory'},
+      { url: 'http://api.dev.local.com/tax/v3/api-docs', name: 'Tax' },
+      { url: 'http://api.dev.local.com/promotion/v3/api-docs', name: 'Promotion'},
+      { url: 'http://api.dev.local.com/search/v3/api-docs', name: 'Search'}]"
+
+ingress:
+  host: api.dev.local.com
+  hosts:
+    - host: api.dev.local.com
