@@ -1,0 +1,4 @@
+ui:
+  extraEnvs:
+    - name: API_BASE_PATH
+      value: http://storefront.staging.local.com/api
