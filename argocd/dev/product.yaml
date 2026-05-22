@@ -7,7 +7,7 @@ spec:
   project: default
   sources:
     - repoURL: https://github.com/miserybee99/devops-project.git
-      targetRevision: feature/gitops
+      targetRevision: main
       path: k8s/charts/product
       helm:
         valueFiles:
