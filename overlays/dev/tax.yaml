@@ -2,6 +2,6 @@ backend:
   nodeSelector:
     env: dev
   image:
-    tag: latest
+    tag: f53ecbe2
   ingress:
     host: api.dev.local.com

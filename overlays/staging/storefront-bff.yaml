@@ -2,6 +2,6 @@ backend:
   nodeSelector:
     env: staging
   image:
-    tag: latest
+    tag: v1.0.1
   ingress:
     host: storefront.staging.local.com
