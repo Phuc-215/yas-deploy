@@ -1,4 +1,6 @@
 backend:
+  nodeSelector:
+    env: dev
   image:
     tag: v1
   ingress:
