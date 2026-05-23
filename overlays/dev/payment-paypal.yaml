@@ -1,0 +1,5 @@
+backend:
+  image:
+    tag: latest
+  ingress:
+    host: api.dev.local.com
