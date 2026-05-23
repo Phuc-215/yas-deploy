@@ -1,6 +1,4 @@
 backend:
-  nodeSelector:
-    env: staging
   image:
     tag: v1.0.1
   ingress:
