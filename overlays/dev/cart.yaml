@@ -1,5 +1,5 @@
 backend:
   image:
-    tag: 8a44eedb
+    tag: d2362f74
   ingress:
     host: api.dev.local.com

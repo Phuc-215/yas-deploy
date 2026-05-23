@@ -2,3 +2,6 @@ ui:
   extraEnvs:
     - name: API_BASE_PATH
       value: http://storefront.dev.local.com/api
+backend:
+  image:
+    tag: d2362f74
