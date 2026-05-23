@@ -15,3 +15,6 @@ ingress:
   host: api.staging.local.com
   hosts:
     - host: api.staging.local.com
+      paths:
+        - path: /swagger-ui
+          pathType: ImplementationSpecific
