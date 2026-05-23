@@ -8,10 +8,10 @@ spec:
   sources:
     - repoURL: https://github.com/miserybee99/devops-project.git
       targetRevision: main
-      path: k8s/charts/storefront-ui
+      path: k8s/charts/storefront
       helm:
         valueFiles:
-          - $values/overlays/dev/storefront-ui.yaml
+          - $values/overlays/dev/storefront.yaml
     - repoURL: https://github.com/Phuc-215/yas-deploy.git
       targetRevision: main
       ref: values

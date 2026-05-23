@@ -8,10 +8,10 @@ spec:
   sources:
     - repoURL: https://github.com/miserybee99/devops-project.git
       targetRevision: main
-      path: k8s/charts/backoffice-ui
+      path: k8s/charts/backoffice
       helm:
         valueFiles:
-          - $values/overlays/dev/backoffice-ui.yaml
+          - $values/overlays/dev/backoffice.yaml
     - repoURL: https://github.com/Phuc-215/yas-deploy.git
       targetRevision: main
       ref: values
