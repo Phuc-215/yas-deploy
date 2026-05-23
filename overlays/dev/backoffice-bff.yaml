@@ -1,5 +1,5 @@
 backend:
   image:
-    tag: d2362f74
+    tag: f53ecbe2
   ingress:
     host: backoffice.dev.local.com

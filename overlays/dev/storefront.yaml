@@ -4,4 +4,4 @@ ui:
       value: http://storefront.dev.local.com/api
 backend:
   image:
-    tag: d2362f74
+    tag: f53ecbe2
