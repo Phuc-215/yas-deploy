@@ -18,17 +18,3 @@ ingress:
       paths:
         - path: /swagger-ui
           pathType: ImplementationSpecific
-
-swaggerRoutes:
-  - product
-  - media
-  - customer
-  - cart
-  - rating
-  - order
-  - payment
-  - location
-  - inventory
-  - tax
-  - promotion
-  - search
