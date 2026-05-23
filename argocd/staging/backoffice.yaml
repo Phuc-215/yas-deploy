@@ -11,7 +11,7 @@ spec:
       path: k8s/charts/backoffice-ui
       helm:
         valueFiles:
-          - $values/overlays/staging/backoffice-ui.yaml
+          - $values/overlays/staging/backoffice.yaml
     - repoURL: https://github.com/Phuc-215/yas-deploy.git
       targetRevision: main
       ref: values

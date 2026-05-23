@@ -8,7 +8,7 @@ spec:
   sources:
     - repoURL: https://github.com/miserybee99/devops-project.git
       targetRevision: main
-      path: k8s/charts/storefront
+      path: k8s/charts/storefront-ui
       helm:
         valueFiles:
           - $values/overlays/dev/storefront.yaml

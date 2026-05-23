@@ -11,7 +11,7 @@ spec:
       path: k8s/charts/storefront-ui
       helm:
         valueFiles:
-          - $values/overlays/staging/storefront-ui.yaml
+          - $values/overlays/staging/storefront.yaml
     - repoURL: https://github.com/Phuc-215/yas-deploy.git
       targetRevision: main
       ref: values
